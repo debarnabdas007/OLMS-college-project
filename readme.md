@@ -1,23 +1,33 @@
 # Online Library Management System (OLMS)
 
 ## Description
-The OLMS is a web-based centralized library management system built with Python, Flask, HTML/CSS, and SQLite.  
-It allows librarians to manage books, users, and book issue/return operations efficiently.  
+The **Online Library Management System (OLMS)** is a simple web-based centralized library management application built using **Python, Flask, HTML/CSS, and SQLite**.
+
+It digitizes basic library operations such as managing books, users, and book issue/return records through a clean and minimal interface.
+
+This project is developed for academic and learning purposes.
+
+---
 
 ## Features
 - Add, view, and delete books
-- Add and view users
+- Add and view users (students/faculty)
 - Issue books to users
-- View transactions
-- Centralized database with SQLite
-- Simple web interface (HTML + CSS)
+- Return issued books
+- Automatic book quantity update on issue/return
+- View all transactions
+- Centralized SQLite database
+- Dark-themed, minimal UI
 - Beginner-friendly Flask backend
 
+---
+
 ## Technology Stack
-- Python 3.x
-- Flask
-- SQLite
-- HTML / CSS
+- **Backend:** Python 3, Flask
+- **Frontend:** HTML, CSS, Bootstrap (Dark Theme)
+- **Database:** SQLite
+
+---
 
 ## Project Structure
 
