@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="mb-3">Issue / Return</h4>
+
+<form method="post" class="row g-2 mb-4">
+    <div class="col">
+        <select name="book_id" class="form-control" required>
+            <option value="">Select Book</option>
+            {% for b in books %}
+            <option value="{{ b.book_id }}">
+                {{ b.title }} ({{ b.quantity }})
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="col">
+        <select name="user_id" class="form-control" required>
+            <option value="">Select User</option>
+            {% for u in users %}
+            <option value="{{ u.user_id }}">
+                {{ u.name }} ({{ u.user_type }})
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="col-2">
+        <button class="btn btn-primary w-100">Issue</button>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book</th>
+            <th>User</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for t in txns %}
+        <tr>
+            <td>{{ t.txn_id }}</td>
+            <td>{{ t.title }}</td>
+            <td>{{ t.name }}</td>
+            <td>{{ t.status }}</td>
+            <td>
+                {% if t.status == "ISSUED" %}
+                <a href="/return/{{ t.txn_id }}" class="btn btn-primary btn-sm">
+                    Return
+                </a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

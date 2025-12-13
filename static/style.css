@@ -1,0 +1,50 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.navbar {
+    border-bottom: 1px solid #30363d;
+}
+
+.table {
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+.table thead {
+    background-color: #21262d;
+}
+
+.form-control {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+}
+
+.form-control:focus {
+    background-color: #161b22;
+    color: white;
+    border-color: #58a6ff;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #238636;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #da3633;
+    border: none;
+}
+
+::placeholder {
+    color: #aaaaaa !important;
+    opacity: 1;
+}
+
+::placeholder {
+    color: #888 !important;
+}
+
