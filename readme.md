@@ -1,5 +1,4 @@
 # Online Library Management System (OLMS)
----
 https://github.com/user-attachments/assets/d3b5e6c4-826f-4547-8a12-193ed96f1b82
 
 ---
